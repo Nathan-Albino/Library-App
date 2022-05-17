@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+}
