@@ -1,6 +1,6 @@
 import express from "express";
-import { connect } from "http2";
 import mongoose from "mongoose";
+import { indexRouter } from "./routes/indexRouter.js";
 
 //create our app/server
 const app = express();
@@ -30,3 +30,6 @@ connectDatabase().then(() => {
     console.log("listening at port 3000");
   });
 });
+
+//routes
+app.use("/", indexRouter);
