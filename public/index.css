@@ -2,8 +2,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: greenyellow;
 }
 
 .nav-item {
-  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem;
 }
