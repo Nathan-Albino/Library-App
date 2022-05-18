@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Nathan-Albino/Library-App#readme",
   "devDependencies": {
+    "dotenv": "^16.0.1",
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "2.6.2"
