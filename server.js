@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import { indexRouter } from "./routes/indexRouter.js";
+import { authorRouter } from "./routes/authorRouter.js";
 import "dotenv/config";
 
 //create our app/server
@@ -30,3 +31,5 @@ connectDatabase().then(() => {
 
 //routes
 app.use("/", indexRouter);
+
+app.use("/authors", authorRouter);

@@ -1,11 +1,15 @@
-.navbar {
+#navbar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color: greenyellow;
 }
 
-.nav-item {
-  margin-right: 1rem;
+.navbar-item {
   padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
