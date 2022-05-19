@@ -11,8 +11,10 @@ router.get("/", authorController.authorIndex);
 router.get("/new", authorController.authorNew);
 
 //Create Author Route
-router.post("/", (req, res) => {
-  res.send("test submitted successfully");
-});
+router.post(
+  "/",
+  express.urlencoded({ extended: true }),
+  authorController.createAuthor
+);
 
 export { router as authorRouter };
